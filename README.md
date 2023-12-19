@@ -1,7 +1,5 @@
 # Emotion Detection from Audio and Text using Multi-Model Approach
 
-**Akhil** \| **Ratan** \| **Krishna** \| **Harshitha**
-
 ## Abstract
 
 Emotional Detection is a way of converting the audio file that contain
