@@ -1,4 +1,4 @@
-# Emotion Detection from Audio and Text using Multi-Model Approach
+# Emotion Detection from Audio and Text using Multi-Modal Approach
 
 ## Abstract
 
