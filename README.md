@@ -13,7 +13,7 @@ project.
 
 ## Dataset
 
-We are using various open-source datasets for this problem:<br>
+Used various open-source datasets for this problem:<br>
 | CREMA-D | [Crowd-Sourced Emotional Multimodal Actors Dataset](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4313618/) | 7442 Audio Files and 6 Emotions  |
 |---------|------------------------------------------------------------------------------------------------------------|----------------------------------|
 | SAVEE   | [Surrey Audio-Visual Expressed Emotions](http://kahlan.eps.surrey.ac.uk/savee/)                            | 480 Audio Files and 7 Emotions   |
@@ -27,7 +27,7 @@ widely used in the fields of speech processing, emotion recognition, and
 related research areas.
 
 Exploratory Data Analysis\
-To understand the distribution of data, we have done some data analysis
+To understand the distribution of data, done some data analysis
 and visualization.![A graph with blue bars Description automatically
 generated](./EDA/image1.png)
 
@@ -37,20 +37,20 @@ distribution after combining all the datasets.
 Sampling rate is one of the key elements
 to bring all the audio files into same frequency, to know which
 frequency to consider bringing all the audio files data into same
-frequency, we visualized the sampling rate of all the audio files as you
+frequency, visualized the sampling rate of all the audio files as you
 can see in the Figure 1, the different sampling rates.
 
 ![](./EDA/image5.png) <br>
 ***Figure 1**: Figure Showing the Different Sampling Rate Distribution*
 
 These are the sampling rates, and we can
-see that most audio files has 16000 frequency, and one thing we observed
+see that most audio files has 16000 frequency, and one thing to be observed
 is all the CREMA-D has 16000 sampling rate, all SAVEE has 44100 sampling
 rate,
 
 except one audio file, all the other TESS has 24414 sampling rate, one
 TESS file has 96000 sampling rate.\
-So to generalize the data and make it easier for calculations, we
+So to generalize the data and make it easier for calculations,
 considered sampling rate of 16000.
 
 While converting audio files to numerical features, the length of audio
@@ -75,11 +75,11 @@ matrix array captures all the frequency and the waveform characteristics
 of the dataset in a higher dimensional space. This higher dimensional
 space matrix is then further refined by going through the dimensionality
 reductions to preserve the components from higher order to a lower order
-matrix and then we employ classification algorithms to classify the
+matrix and then employed classification algorithms to classify the
 emotions.
 
-To convert audio data into numerical we approached multitude of feature
-engineering algorithms to de-compose the audio waveforms and we
-inspected each algorithm which best suits our purpose of feature
-engineering. The feature engineering algorithms we used are *Zero
+To convert audio data into numerical, approached multitude of feature
+engineering algorithms to de-compose the audio waveforms and 
+inspected each algorithm which best suits my purpose of feature
+engineering. The feature engineering algorithms used are *Zero
 Crossing Rate (ZCR)*, *Chroma Shift*, *MFCC*, *Mel-Spectrogram*.
